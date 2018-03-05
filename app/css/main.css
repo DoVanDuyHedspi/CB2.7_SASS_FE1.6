@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'VarelaRound';
+  src: url("../fonts/VarelaRound-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto-B';
+  src: url("../fonts/Roboto-Bold.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body #container {
+  width: 1024px;
+  height: 1024px;
+  background: "";
+  background-image: url("../images/background.png");
+  background-size: cover;
+  margin: auto;
+  padding-top: 100px; }
+  body #container #content {
+    width: 52%;
+    height: 820px;
+    background: white;
+    margin: auto;
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.3); }
+    body #container #content #top {
+      height: 95px;
+      padding: 25px 22px; }
+      body #container #content #top #avatar {
+        width: 45px;
+        height: 45px;
+        background: black;
+        border-radius: 50%;
+        margin-right: 22px;
+        float: left; }
+      body #container #content #top #name-address {
+        float: left; }
+        body #container #content #top #name-address #name {
+          font-family: Roboto-B;
+          font-size: 20px;
+          color: ""; }
+        body #container #content #top #name-address #address {
+          font-family: VarelaRound;
+          font-size: 15px;
+          color: #a6a6a6; }
+      body #container #content #top #plus {
+        float: right;
+        margin-left: 22px; }
+      body #container #content #top #follow {
+        float: right; }
+        body #container #content #top #follow button {
+          width: 120px;
+          height: 35px;
+          background: white;
+          font-family: "";
+          font-size: 15px;
+          color: #42b2fc;
+          border: 2px solid #42b2fc;
+          font-weight: bold;
+          text-transform: uppercase;
+          border-radius: 5px; }
+    body #container #content #mid {
+      width: 100%;
+      height: 535px;
+      background: #c8c7c7;
+      padding-top: 175px; }
+      body #container #content #mid div {
+        width: 233px;
+        margin: auto; }
+    body #container #content #bottom {
+      padding: 27px 22px; }
+      body #container #content #bottom div {
+        margin-bottom: 22px; }
+      body #container #content #bottom #active span {
+        margin-right: 22px;
+        cursor: poiter; }
+        body #container #content #bottom #active span:last-child {
+          margin-right: 0;
+          float: right; }
+      body #container #content #bottom #numberLikes p span {
+        font-family: VarelaRound;
+        font-size: 20px;
+        color: "";
+        font-weight: bold;
+        margin-left: 10px; }
+      body #container #content #bottom #tag span:first-child {
+        font-family: Roboto-B;
+        font-size: 20px;
+        color: "";
+        margin-right: 35px; }
+      body #container #content #bottom #tag span:last-child {
+        font-family: VarelaRound;
+        font-size: 19px;
+        color: #356bb4; }
