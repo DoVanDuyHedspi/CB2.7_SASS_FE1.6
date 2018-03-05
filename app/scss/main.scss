@@ -1,0 +1,98 @@
+@import 'base/typography';
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body {
+	#container {
+		@include box($container-width,$container-height,"");
+		background-image: url('../images/background.png');
+		background-size: cover;
+		margin: auto;
+		padding-top: $container-paddingTop;
+		#content {
+			@include box($content-width,$content-height,white);
+			margin:auto;
+			box-shadow: 15px 15px 15px 0px rgba(0,0,0,0.3);
+			#top {
+				height:$top-height;
+				padding:25px 22px;
+				#avatar {
+					@include box($avatar-width,$avatar-width,black);
+					border-radius: 50%;
+					margin-right: 22px;
+					float: left;
+				}
+				#name-address {
+					float:left;
+					#name {
+						@include text(Roboto-B,20px,"");
+					}
+					#address {
+						@include text(VarelaRound,15px,#a6a6a6);
+					}
+				}
+				#plus {
+					float: right;
+					margin-left: 22px;
+				}
+				#follow {
+					float: right;
+					button {
+						@include box(120px,35px,white);
+						@include text('',15px,#42b2fc);
+						border: 2px solid #42b2fc;
+						font-weight: bold;
+						text-transform: uppercase;
+						border-radius: 5px;
+					}
+				}
+			}
+			#mid {
+				@include box(100%,535px,#c8c7c7);
+				padding-top: 175px;
+				div {
+					width: 233px;
+					margin: auto;
+				}
+			}
+			#bottom {
+				padding:27px 22px;
+				div {
+					margin-bottom: 22px;
+				}
+				#active {
+					span {
+						margin-right: 22px;
+						cursor: poiter;
+						&:last-child {
+							margin-right: 0;
+							float: right;
+						}
+					}
+				}
+				#numberLikes p span {
+					@include text(VarelaRound,20px,'');
+					font-weight: bold;
+					margin-left: 10px;
+				}
+				#tag {
+					span {
+						&:first-child {
+							@include text(Roboto-B,20px,'');
+							margin-right: 35px;
+						}
+						&:last-child {
+							@include text(VarelaRound,19px,#356bb4);
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

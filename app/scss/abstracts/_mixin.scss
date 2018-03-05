@@ -1,0 +1,10 @@
+@mixin text($font,$size,$color){
+	font-family: $font;
+	font-size: $size;
+	color: $color;
+}
+@mixin box($width,$height,$background){
+	width:$width;
+	height:$height;
+	background: $background;
+}
